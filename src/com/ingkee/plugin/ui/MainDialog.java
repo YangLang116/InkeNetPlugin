@@ -4,13 +4,15 @@ import javax.swing.*;
 
 public class MainDialog extends JFrame {
     private JPanel contentPane;
-    private JTextField textField1;
-    private JButton button1;
-    private JButton button2;
-    private JComboBox comboBox1;
-    private JButton button3;
-    private JButton button4;
-    private JTextPane textPane2;
+    private JTextField edittext_key;
+    private JButton btn_cancel;
+    private JButton btn_ok;
+    private JComboBox spinner_reqmethod;
+    private JButton btn_add;
+    private JButton btn_reduce;
+    private JTextPane edittext_rsp;
+    private JPanel listview_req;
+    private JButton formatButton;
     private JButton buttonOK;
 
     public MainDialog() {
