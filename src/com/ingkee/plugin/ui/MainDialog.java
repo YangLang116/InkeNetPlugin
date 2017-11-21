@@ -1,8 +1,12 @@
 package com.ingkee.plugin.ui;
 
-import javax.swing.*;
+import com.ingkee.plugin.entitys.ParamEntity;
 
-public class MainDialog extends JFrame {
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class MainDialog extends JFrame implements ParamEditDialog.OnCompleteParam {
     private JPanel contentPane;
     private JTextField edittext_key;
     private JButton btn_cancel;
@@ -24,8 +28,14 @@ public class MainDialog extends JFrame {
         setTitle("ParamMaker");
         setAlwaysOnTop(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500,500);
+        setSize(500, 500);
         setLocationRelativeTo(null);
+
+        btn_add.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ParamEditDialog.showParamEdit(MainDialog.this::onCompleteParam);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -36,5 +46,15 @@ public class MainDialog extends JFrame {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+    }
+
+    /**
+     * 获取到了param
+     *
+     * @param paramEntity
+     */
+    @Override
+    public void onCompleteParam(ParamEntity paramEntity) {
+        System.out.println(paramEntity.toString());
     }
 }

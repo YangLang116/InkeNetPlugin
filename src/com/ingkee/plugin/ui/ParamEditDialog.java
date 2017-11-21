@@ -1,5 +1,7 @@
 package com.ingkee.plugin.ui;
 
+import com.ingkee.plugin.entitys.ParamEntity;
+
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -10,35 +12,34 @@ public class ParamEditDialog extends JDialog {
     private JButton buttonOK;
     private JButton buttonCancel;
     private JTextField paramEdit;
-    private JSpinner typeSpinner;
     private JLabel paramName;
     private JLabel paramType;
     private JLabel paramDiscribe;
     private JTextField discribeEdit;
+    private JComboBox typeComboBox;
 
-    private List<String> dataTypes =new ArrayList<>();
+    private ParamEntity paramEntity = new ParamEntity();
+
+    private OnCompleteParam onCompleteParam;
+
+    public void setOnCompleteParam(OnCompleteParam onCompleteParam) {
+        this.onCompleteParam = onCompleteParam;
+    }
 
     public ParamEditDialog() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        dataTypes.add("String");
-        dataTypes.add("int");
-        dataTypes.add("boolean");
-        dataTypes.add("long");
-        dataTypes.add("object");
-
-        SpinnerListModel spinnerListModel = new SpinnerListModel(dataTypes);
-        typeSpinner.setModel(spinnerListModel);
-        JSpinner.ListEditor dataTypeEdit = new JSpinner.ListEditor(typeSpinner);
-        typeSpinner.setEditor(dataTypeEdit);
-
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onOK();
+        typeComboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                Object item = e.getItem();
+                paramEntity.paramType = item.toString();
             }
         });
+
+        buttonOK.addActionListener(e -> onOK());
 
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -64,6 +65,12 @@ public class ParamEditDialog extends JDialog {
 
     private void onOK() {
         // add your code here
+
+        paramEntity.paramName = paramEdit.getText();
+        paramEntity.paramDiscribe = paramDiscribe.getText();
+        if (onCompleteParam != null) {
+            onCompleteParam.onCompleteParam(paramEntity);
+        }
         dispose();
     }
 
@@ -72,10 +79,14 @@ public class ParamEditDialog extends JDialog {
         dispose();
     }
 
-    public static void main(String[] args) {
+    public static void showParamEdit(OnCompleteParam onCompleteParam) {
         ParamEditDialog dialog = new ParamEditDialog();
+        dialog.setOnCompleteParam(onCompleteParam);
         dialog.pack();
         dialog.setVisible(true);
-        System.exit(0);
+    }
+
+    public interface OnCompleteParam {
+        void onCompleteParam(ParamEntity paramEntity);
     }
 }
