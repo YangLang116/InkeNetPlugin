@@ -50,7 +50,7 @@
               <foreground color="-1118482"/>
               <margin top="0" left="0" bottom="0" right="0"/>
               <scrollOffset value="0"/>
-              <text value="4564546464"/>
+              <text value=""/>
             </properties>
           </component>
         </children>
@@ -74,7 +74,9 @@
             <properties>
               <background color="-12828863"/>
             </properties>
-            <border type="etched"/>
+            <border type="etched" title="请求参数">
+              <title-color color="-4473925"/>
+            </border>
             <children>
               <grid id="678c9" layout-manager="FlowLayout" hgap="10" vgap="5" flow-align="0">
                 <constraints border-constraint="South"/>
@@ -87,12 +89,13 @@
                     <constraints/>
                     <properties>
                       <background color="-12828863"/>
-                      <borderPainted value="false"/>
+                      <borderPainted value="true"/>
                       <contentAreaFilled value="true"/>
                       <defaultCapable value="true"/>
                       <foreground color="-1118482"/>
+                      <horizontalTextPosition value="0"/>
                       <margin top="0" left="0" bottom="0" right="0"/>
-                      <preferredSize width="20" height="20"/>
+                      <preferredSize width="40" height="20"/>
                       <text value="+"/>
                     </properties>
                   </component>
@@ -100,11 +103,13 @@
                     <constraints/>
                     <properties>
                       <background color="-12828863"/>
-                      <borderPainted value="false"/>
+                      <borderPainted value="true"/>
                       <font name="Consolas" size="16" style="1"/>
                       <foreground color="-1118482"/>
+                      <horizontalTextPosition value="0"/>
                       <margin top="0" left="0" bottom="0" right="0"/>
-                      <preferredSize width="20" height="20"/>
+                      <preferredSize width="40" height="20"/>
+                      <selected value="false"/>
                       <text value="-"/>
                     </properties>
                   </component>
@@ -145,14 +150,14 @@
           <grid id="1bcf5" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag top="10" left="10" bottom="10" right="10" weightx="1.0" weighty="10.0"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="1.0" weighty="8.0"/>
             </constraints>
             <properties>
               <background color="-12828863"/>
               <foreground color="-12828863"/>
             </properties>
-            <border type="etched">
-              <title-color color="-12828863"/>
+            <border type="etched" title="响应体">
+              <title-color color="-4473925"/>
             </border>
             <children>
               <scrollpane id="c8127">
@@ -183,7 +188,7 @@
                     <constraints/>
                     <properties>
                       <background color="-12828863"/>
-                      <borderPainted value="false"/>
+                      <borderPainted value="true"/>
                       <foreground color="-1118482"/>
                       <preferredSize width="80" height="20"/>
                       <text value="Format"/>
@@ -195,8 +200,8 @@
           </grid>
           <grid id="4a941" layout-manager="FlowLayout" hgap="10" vgap="5" flow-align="1">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.2"/>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
               <background color="-12828863"/>
@@ -222,6 +227,10 @@
                   <alignmentY value="0.0"/>
                   <background color="-12828863"/>
                   <foreground color="-1118482"/>
+                  <model>
+                    <item value="GET"/>
+                    <item value="POST"/>
+                  </model>
                   <preferredSize width="120" height="29"/>
                 </properties>
               </component>
