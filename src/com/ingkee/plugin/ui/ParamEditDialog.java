@@ -23,13 +23,13 @@ public class ParamEditDialog extends JDialog {
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        dataTypes.add(String.class.getTypeName());
-        dataTypes.add(Integer.class.getTypeName());
-        dataTypes.add(Boolean.class.getTypeName());
-        dataTypes.add(Long.class.getTypeName());
-        dataTypes.add(Object.class.getTypeName());
+        dataTypes.add("String");
+        dataTypes.add("int");
+        dataTypes.add("boolean");
+        dataTypes.add("long");
+        dataTypes.add("object");
 
-        SpinnerListModel spinnerListModel = new SpinnerListModel();
+        SpinnerListModel spinnerListModel = new SpinnerListModel(dataTypes);
         typeSpinner.setModel(spinnerListModel);
         JSpinner.ListEditor dataTypeEdit = new JSpinner.ListEditor(typeSpinner);
         typeSpinner.setEditor(dataTypeEdit);

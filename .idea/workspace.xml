@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f50c98c5-b2a4-4073-bda5-648e7c8b54a1" name="Default" comment="" />
+    <list default="true" id="f50c98c5-b2a4-4073-bda5-648e7c8b54a1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/META-INF/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/ingkee/plugin/actions/MainAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/ingkee/plugin/ui/MainDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/AbstractLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/DimensionInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/GridConstraints.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/GridLayoutManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/HorizontalInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/LayoutState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/Spacer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/SupportCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKNetPlugin/com/intellij/uiDesigner/core/VerticalInfo.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java" afterPath="$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +30,96 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainDialog.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParamEditDialog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParamEditDialog.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding>
+                <marker date="1511253927780" expanded="true" signature="46398:46416" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46398:46429" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46398:46444" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46479:48974" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46492:48959" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46546:46841" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46565:46826" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46628:46806" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46668:46772" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46689:46750" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46891:47218" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="46910:47203" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47005:47183" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47045:47149" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47066:47127" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47269:47534" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47288:47519" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47321:47499" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47361:47465" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47382:47443" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47577:47883" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47596:47868" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47670:47848" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47710:47814" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47731:47792" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47934:48287" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="47953:48272" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48035:48252" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48075:48218" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48096:48196" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48322:48628" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48341:48613" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48415:48593" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48455:48559" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48476:48537" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48680:48945" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48699:48930" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48732:48910" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48772:48876" ph="..." />
+                <marker date="1511253927780" expanded="true" signature="48793:48854" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -49,6 +151,7 @@
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java" />
         <option value="$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java" />
       </list>
     </option>
   </component>
@@ -98,76 +201,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IKNetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IKNetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainDialog" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IKNetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IKNetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IKNetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IKNetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -198,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Plugin.Plugin">
+  <component name="RunManager" selected="Application.ParamEditDialog">
     <configuration default="false" name="MainAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -227,6 +264,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ingkee.plugin.ui.MainDialog" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IKNetPlugin" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParamEditDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ingkee.plugin.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ingkee.plugin.ui.ParamEditDialog" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -450,15 +507,17 @@
       <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Plugin.Plugin" />
       <item index="1" class="java.lang.String" itemvalue="Application.MainAction" />
       <item index="2" class="java.lang.String" itemvalue="Application.MainDialog" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ParamEditDialog" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainDialog" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MainAction" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.ParamEditDialog" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainDialog" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MainAction" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511228911696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="合并冲突">
+      <created>1511231075246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511231075246</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -503,19 +569,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47707424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15331197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15651709" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -526,6 +591,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -563,7 +629,8 @@
     <MESSAGE value="调整界面风格" />
     <MESSAGE value="布局响应式调整" />
     <MESSAGE value="布局响应式调整1" />
-    <option name="LAST_COMMIT_MESSAGE" value="布局响应式调整1" />
+    <MESSAGE value="合并冲突" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并冲突" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -583,6 +650,172 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <marker date="1511253927780" expanded="true" signature="46398:46416" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46398:46429" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46398:46444" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46479:48974" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46492:48959" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46546:46841" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46565:46826" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46628:46806" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46668:46772" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46689:46750" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46891:47218" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46910:47203" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47005:47183" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47045:47149" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47066:47127" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47269:47534" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47288:47519" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47321:47499" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47361:47465" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47382:47443" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47577:47883" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47596:47868" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47670:47848" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47710:47814" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47731:47792" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47934:48287" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47953:48272" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48035:48252" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48075:48218" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48096:48196" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48322:48628" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48341:48613" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48415:48593" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48455:48559" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48476:48537" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48680:48945" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48699:48930" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48732:48910" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48772:48876" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48793:48854" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <marker date="1511253927780" expanded="true" signature="46398:46416" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46398:46429" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46398:46444" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46479:48974" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46492:48959" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46546:46841" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46565:46826" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46628:46806" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46668:46772" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46689:46750" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46891:47218" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46910:47203" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47005:47183" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47045:47149" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47066:47127" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47269:47534" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47288:47519" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47321:47499" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47361:47465" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47382:47443" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47577:47883" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47596:47868" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47670:47848" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47710:47814" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47731:47792" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47934:48287" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47953:48272" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48035:48252" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48075:48218" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48096:48196" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48322:48628" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48341:48613" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48415:48593" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48455:48559" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48476:48537" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48680:48945" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48699:48930" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48732:48910" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48772:48876" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48793:48854" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -631,17 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -651,6 +873,145 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="72" lean-forward="true" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/sd.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/sd.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainConfigDialog.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainConfigDialog.form" />
+    <entry file="file://$PROJECT_DIR$/IKNetPlugin.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="32" column="99" lean-forward="false" selection-start-line="32" selection-start-column="99" selection-end-line="32" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <marker date="1511253927780" expanded="true" signature="46398:46416" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46398:46429" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46398:46444" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46479:48974" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46492:48959" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46546:46841" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46565:46826" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46628:46806" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46668:46772" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46689:46750" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46891:47218" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="46910:47203" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47005:47183" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47045:47149" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47066:47127" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47269:47534" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47288:47519" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47321:47499" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47361:47465" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47382:47443" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47577:47883" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47596:47868" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47670:47848" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47710:47814" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47731:47792" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47934:48287" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="47953:48272" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48035:48252" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48075:48218" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48096:48196" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48322:48628" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48341:48613" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48415:48593" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48455:48559" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48476:48537" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48680:48945" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48699:48930" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48732:48910" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48772:48876" ph="..." />
+            <marker date="1511253927780" expanded="true" signature="48793:48854" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/actions/MainAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/MainDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ingkee/plugin/ui/ParamEditDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
