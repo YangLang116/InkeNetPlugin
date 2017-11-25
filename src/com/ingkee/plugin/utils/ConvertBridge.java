@@ -3,9 +3,11 @@ package com.ingkee.plugin.utils;
 import com.ingkee.plugin.config.ConfigCenter;
 import com.ingkee.plugin.entitys.ParamEntity;
 import com.intellij.openapi.command.WriteCommandAction;
+import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.*;
 import com.intellij.psi.codeStyle.JavaCodeStyleManager;
 import com.intellij.psi.search.GlobalSearchScope;
+import org.apache.http.util.TextUtils;
 import sun.security.krb5.Config;
 
 import java.io.File;
@@ -26,16 +28,16 @@ public class ConvertBridge {
     public void run() {
         try {
             WriteCommandAction.runWriteCommandAction(mFile.getProject(), () -> {
-                PsiElementFactory elementFactory = JavaPsiFacade.getElementFactory(mFile.getProject());
-                String filePath = createRespFile(elementFactory); //生成响应文件
-                modifyReqFile(elementFactory, filePath); //修改请求文件
+                String filePath = createRespFile(); //生成响应文件
+                modifyReqFile(filePath); //修改请求文件
             });
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void modifyReqFile(PsiElementFactory elementFactory, String rspfilePath) {
+    private void modifyReqFile(String rspfilePath) {
+        PsiElementFactory elementFactory = JavaPsiFacade.getElementFactory(mFile.getProject());
         addKeyFiledToClass(elementFactory);
         String className = addReqInnerToClass(elementFactory);
         addReqMethodToClass(elementFactory, className, rspfilePath);
@@ -97,8 +99,45 @@ public class ConvertBridge {
         mClass.add(psiMethod);
     }
 
-    private String createRespFile(PsiElementFactory elementFactory) {
-        return "test.MyRsp";
+    private String createRespFile() {
+        if (!TextUtils.isEmpty(ConfigCenter.RspBody.trim())) {
+            String[] declareValues = ConfigCenter.KEY.toLowerCase().split("_");
+            StringBuffer classNameBuf = new StringBuffer();
+            for (String declare : declareValues) {
+                classNameBuf.append(declare.substring(0, 1).toUpperCase()).append(declare.substring(1));
+            }
+            classNameBuf.append("Entity");
+
+            String fileDirectoryPath = mFile.getVirtualFile().getParent().getPath();
+            String EntityDirectotyPath = fileDirectoryPath + "/Entity";
+            File EntiryDirectory = new File(EntityDirectotyPath);
+            if (!(EntiryDirectory.exists() && EntiryDirectory.isDirectory())) { //创建目录
+                EntiryDirectory.mkdir();
+            }
+
+            PsiClass respClass = null;
+            PsiDirectory entityPsiDirectory = null;
+            for (PsiDirectory f : mFile.getParent().getSubdirectories()) {
+                if (f.getName().equals("Entity")) {
+                    entityPsiDirectory = f;
+                    PsiFile file = f.findFile(classNameBuf.toString());
+                    if (file != null) {
+                        respClass = ((PsiJavaFile) file).getClasses()[0];
+                    } else {
+                        respClass = JavaDirectoryService.getInstance().createClass(entityPsiDirectory, classNameBuf.toString());
+                    }
+                    break;
+                }
+            }
+            if (respClass == null) {
+                return "";
+            }
+            // 根据输入的Json创建类成员
+            JsonToFieldUtil.run(respClass, ConfigCenter.RspBody);
+            return respClass.getQualifiedName();
+        } else {
+            return "com.meelive.ingkee.common.plugin.model.BaseModel";
+        }
     }
 
     private PsiJavaCodeReferenceElement getDefaultNetWorkReqParam(PsiElementFactory elementFactory) {
