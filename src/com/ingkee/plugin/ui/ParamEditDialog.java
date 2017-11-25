@@ -8,17 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ParamEditDialog extends JDialog {
+
     private JPanel contentPane;
-    private JButton buttonOK;
-    private JButton buttonCancel;
-    private JTextField paramEdit;
     private JLabel paramName;
     private JLabel paramType;
     private JLabel paramDiscribe;
+    private JButton buttonOK;
+    private JButton buttonCancel;
+    private JTextField paramEdit;
     private JTextField discribeEdit;
     private JComboBox typeComboBox;
-
-    private ParamEntity paramEntity = new ParamEntity();
 
     private OnCompleteParam onCompleteParam;
 
@@ -29,45 +28,26 @@ public class ParamEditDialog extends JDialog {
     public ParamEditDialog() {
         setContentPane(contentPane);
         setModal(true);
+        setAlwaysOnTop(true);
+        setLocationRelativeTo(null);
         getRootPane().setDefaultButton(buttonOK);
-
-        typeComboBox.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                Object item = e.getItem();
-                paramEntity.paramType = item.toString();
-            }
-        });
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 
         buttonOK.addActionListener(e -> onOK());
-
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
-
-        // call onCancel() when cross is clicked
-        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        buttonCancel.addActionListener(e -> onCancel());
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 onCancel();
             }
         });
-
-        // call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     private void onOK() {
-        // add your code here
-
+        ParamEntity paramEntity = new ParamEntity();
         paramEntity.paramName = paramEdit.getText();
-        paramEntity.paramDiscribe = paramDiscribe.getText();
+        paramEntity.paramDiscribe = discribeEdit.getText();
+        paramEntity.paramType = typeComboBox.getItemAt(typeComboBox.getSelectedIndex()).toString();
         if (onCompleteParam != null) {
             onCompleteParam.onCompleteParam(paramEntity);
         }
@@ -75,7 +55,6 @@ public class ParamEditDialog extends JDialog {
     }
 
     private void onCancel() {
-        // add your code here if necessary
         dispose();
     }
 

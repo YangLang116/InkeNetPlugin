@@ -3,11 +3,9 @@ package com.ingkee.plugin.actions;
 import com.ingkee.plugin.ui.MainDialog;
 import com.intellij.codeInsight.CodeInsightActionHandler;
 import com.intellij.codeInsight.generation.actions.BaseGenerateAction;
-import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.Editor;
-import com.intellij.openapi.fileEditor.FileEditor;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.JavaPsiFacade;
 import com.intellij.psi.PsiClass;
@@ -38,9 +36,9 @@ public class MainAction extends BaseGenerateAction {
         // 获取当前编辑器中的文件
         PsiFile psiFile = PsiUtilBase.getPsiFileInEditor(editor, project);
         PsiClass targetClass = getTargetClass(editor, psiFile); //当前的文件类
-        JavaPsiFacade.getElementFactory(project);
         MainDialog mainDialog = new MainDialog();
+        mainDialog.setPsiFile(psiFile);
+        mainDialog.setPsiClass(targetClass);
         mainDialog.setVisible(true);
-
     }
 }
