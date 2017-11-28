@@ -7,13 +7,12 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
-import com.intellij.psi.JavaPsiFacade;
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.util.PsiUtilBase;
 
 /**
- * Created by YangLang on 2017/11/20.
+ * Created by YangLang on 2017/11/25.
  * 用于收集环境信息数据
  */
 public class MainAction extends BaseGenerateAction {
@@ -24,6 +23,17 @@ public class MainAction extends BaseGenerateAction {
 
     public MainAction(CodeInsightActionHandler handler) {
         super(handler);
+    }
+
+    @Override
+    public void update(AnActionEvent e) {
+        Editor editor = e.getData(PlatformDataKeys.EDITOR);
+        Project project = e.getData(PlatformDataKeys.PROJECT);
+        if (editor == null || project == null) {
+            e.getPresentation().setVisible(false);
+        } else {
+            e.getPresentation().setVisible(true);
+        }
     }
 
     @Override

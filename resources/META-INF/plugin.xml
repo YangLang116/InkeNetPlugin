@@ -1,39 +1,31 @@
 <idea-plugin>
-  <id>com.ingkee.InkeNetPlugin</id>
-  <name>通过ServiceInfo的Key生成网络层代码</name>
-  <version>1.0</version>
-  <vendor email="1004145468@qq.com" url="">YourCompany</vendor>
+    <id>com.ingkee.HttpRequest</id>
+    <name>HttpRequest</name>
+    <version>1.0</version>
+    <vendor email="1004145468@qq.com" url="">Ingkee</vendor>
 
-  <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+    <description><![CDATA[
+      通过ServiceInfo的Key生成网络请求代码块
     ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+    <change-notes><![CDATA[
+      version 1.0: 支持基本数据类型生成<br>
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="145.0"/>
+    <idea-version since-build="107.105"/>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
-
-  <actions>
-    <!-- Add your actions here -->
-    <action id="com.ingkee.mainaction" class="com.ingkee.plugin.actions.MainAction" text="NetWorkByKey"
-            description="">
-      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
-    </action>
-  </actions>
+    <actions>
+        <action id="com.ingkee.mainaction" class="com.ingkee.plugin.actions.MainAction" text="_HttpRequest"
+                description="通过配置Http请求信息，生成模板代码">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt 1"/>
+        </action>
+    </actions>
 
 </idea-plugin>

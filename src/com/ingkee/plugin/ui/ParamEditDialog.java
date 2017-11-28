@@ -28,7 +28,9 @@ public class ParamEditDialog extends JDialog {
     public ParamEditDialog() {
         setContentPane(contentPane);
         setModal(true);
+        setTitle(">>>>> Request Parameter <<<<<");
         setAlwaysOnTop(true);
+        setSize(300, 200);
         setLocationRelativeTo(null);
         getRootPane().setDefaultButton(buttonOK);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -41,6 +43,7 @@ public class ParamEditDialog extends JDialog {
             }
         });
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        contentPane.registerKeyboardAction(e -> onOK(), KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     private void onOK() {

@@ -69,7 +69,7 @@
           <grid id="e39d7" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag top="10" left="10" bottom="10" right="10" weightx="1.0" weighty="1.0"/>
+              <gridbag top="10" left="10" bottom="10" right="10" weightx="1.0" weighty="6.0"/>
             </constraints>
             <properties>
               <background color="-12828863"/>
@@ -95,7 +95,7 @@
                       <foreground color="-1118482"/>
                       <horizontalTextPosition value="0"/>
                       <margin top="0" left="0" bottom="0" right="0"/>
-                      <preferredSize width="40" height="20"/>
+                      <preferredSize width="50" height="40"/>
                       <text value="+"/>
                     </properties>
                   </component>
@@ -104,11 +104,11 @@
                     <properties>
                       <background color="-12828863"/>
                       <borderPainted value="true"/>
-                      <font name="Consolas" size="16" style="1"/>
+                      <font/>
                       <foreground color="-1118482"/>
                       <horizontalTextPosition value="0"/>
                       <margin top="0" left="0" bottom="0" right="0"/>
-                      <preferredSize width="40" height="20"/>
+                      <preferredSize width="50" height="40"/>
                       <selected value="false"/>
                       <text value="-"/>
                     </properties>
@@ -188,7 +188,7 @@
                       <background color="-12828863"/>
                       <borderPainted value="true"/>
                       <foreground color="-1118482"/>
-                      <preferredSize width="80" height="20"/>
+                      <preferredSize width="100" height="40"/>
                       <text value="Format"/>
                     </properties>
                   </component>

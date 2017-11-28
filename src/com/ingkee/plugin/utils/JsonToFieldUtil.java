@@ -1,5 +1,6 @@
 package com.ingkee.plugin.utils;
 
+import com.intellij.openapi.ui.MessageType;
 import com.intellij.psi.*;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,6 +27,9 @@ public class JsonToFieldUtil {
     private static void addObjectField(PsiClass psiClass, JSONObject jsonObject) {
         PsiElementFactory elementFactory = PsiElementFactory.SERVICE.getInstance(psiClass.getProject());
         for (Object key : jsonObject.keySet()) {
+            if (key.equals("dm_error") || key.equals("error_msg")) {
+                continue;
+            }
             Object value = jsonObject.get((String) key);
             PsiType psiType = null;
             PsiField psiField = null;
@@ -33,14 +37,16 @@ public class JsonToFieldUtil {
                 psiType = elementFactory.createPrimitiveTypeFromText("int");
             } else if (value instanceof Boolean) {
                 psiType = elementFactory.createPrimitiveTypeFromText("boolean");
-            } else if (value instanceof Double || value instanceof Float) {
+            } else if (value instanceof Float) {
                 psiType = elementFactory.createPrimitiveTypeFromText("float");
+            } else if (value instanceof Double) {
+                psiType = elementFactory.createPrimitiveTypeFromText("double");
             } else if (value instanceof Long) {
                 psiType = elementFactory.createPrimitiveTypeFromText("long");
             } else if (value instanceof String) {
                 psiType = elementFactory.createTypeFromText("java.lang.String", null);
             } else if (value instanceof JSONArray) {
-
+                ToastUtil.make(psiClass.getProject(), MessageType.INFO, "数组类型暂不支持");
             } else if (value instanceof JSONObject) {
                 String className = ((String) key).substring(0, 1).toUpperCase() + ((String) key).substring(1) + "Item";
                 PsiClass itemClass = elementFactory.createClass(className);
@@ -64,5 +70,6 @@ public class JsonToFieldUtil {
 
     private static void addArrayField(PsiClass psiClass, JSONArray jsonArray) {
         PsiElementFactory elementFactory = PsiElementFactory.SERVICE.getInstance(psiClass.getProject());
+        ToastUtil.make(psiClass.getProject(), MessageType.INFO, "暂时不支持[{}...]形式！");
     }
 }

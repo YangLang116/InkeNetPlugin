@@ -42,7 +42,7 @@ public class MainDialog extends JFrame implements ParamEditDialog.OnCompletePara
 
     private void initViews() {
         setContentPane(contentPane);
-        setTitle("ParamMaker");
+        setTitle(">>>>> HTTP Request Maker <<<<<");
         setAlwaysOnTop(true);
         setSize(500, 620);
         setLocationRelativeTo(null);
@@ -59,35 +59,44 @@ public class MainDialog extends JFrame implements ParamEditDialog.OnCompletePara
                 onCancel();
             }
         });
-        btn_add.addActionListener(e -> ParamEditDialog.showParamEdit(MainDialog.this::onCompleteParam));
+        btn_add.addActionListener(e -> ParamEditDialog.showParamEdit(MainDialog.this));
         btn_reduce.addActionListener(e -> reduceParam(listview_req.getSelectedIndex()));
         formatButton.addActionListener(e -> formatRsp(edittext_rsp, edittext_rsp.getText()));
+        btn_cancel.addActionListener(e -> onCancel());
         btn_ok.addActionListener(e -> dealFile());
+        btn_add.registerKeyboardAction(e -> ParamEditDialog.showParamEdit(MainDialog.this), KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btn_reduce.registerKeyboardAction(e -> reduceParam(listview_req.getSelectedIndex()), KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btn_cancel.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btn_ok.registerKeyboardAction(e -> dealFile(), KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        formatButton.registerKeyboardAction(e -> formatRsp(edittext_rsp, edittext_rsp.getText()), KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     private void dealFile() {
-        if (TextUtils.isEmpty(edittext_key.getText())) {
+        if (TextUtils.isEmpty(edittext_key.getText().trim())) {
             return;
         }
-        ConfigCenter.KEY = edittext_key.getText();
+        ConfigCenter.KEY = edittext_key.getText().trim();
         ConfigCenter.mParams = mDatas;
-        ConfigCenter.RspBody = edittext_rsp.getText();
+        ConfigCenter.RspBody = edittext_rsp.getText().trim();
         ConfigCenter.method = spinner_reqmethod.getSelectedIndex() == 0 ? "get" : "post";
-        //生成文件
-        new ConvertBridge(mFile, mClass).run();
+        new ConvertBridge(mFile, mClass).run(); //生成文件
+        dispose();
     }
 
     @Override
     public void onCompleteParam(ParamEntity paramEntity) {
-        if (paramEntity != null && mModels != null) {
+        if (paramEntity != null) {
             mDatas.add(paramEntity);
             mModels.addElement(paramEntity);
         }
     }
 
     private void reduceParam(int index) {
-        mModels.remove(index);
+        if (index >= 0) {
+            mModels.remove(index);
+            mDatas.remove(index);
+        }
     }
 
     private void formatRsp(JTextPane editText, String content) {
@@ -128,10 +137,8 @@ public class MainDialog extends JFrame implements ParamEditDialog.OnCompletePara
 
     //参数列表JList的适配器对象
     private static class ParamListCellRender implements ListCellRenderer<ParamEntity>, Serializable {
-
         private static Color M_WHITE = new Color(238, 238, 238);
         private static Color M_GRAP = new Color(60, 63, 65);
-
         @Override
         public Component getListCellRendererComponent(JList<? extends ParamEntity> list, ParamEntity value, int index, boolean isSelected, boolean cellHasFocus) {
             JPanel container = new JPanel();
@@ -142,11 +149,8 @@ public class MainDialog extends JFrame implements ParamEditDialog.OnCompletePara
                 return container;
             }
             JLabel nameLabel = new JLabel(value.paramName);
-            nameLabel.setFont(list.getFont());
             JLabel typeLabel = new JLabel(value.paramType);
-            typeLabel.setFont(list.getFont());
             JLabel desLabel = new JLabel(value.paramDiscribe);
-            desLabel.setFont(list.getFont());
             container.add(nameLabel, new GridConstraints(0, 0, 1, 1, 0, 1, 1, 1, null, null, null));
             container.add(typeLabel, new GridConstraints(0, 1, 1, 1, 0, 1, 1, 1, null, null, null));
             container.add(desLabel, new GridConstraints(0, 2, 1, 1, 0, 1, 1, 1, null, null, null));
