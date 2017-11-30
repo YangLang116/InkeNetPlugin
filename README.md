@@ -18,5 +18,8 @@
 ## 5.目的
 >* 本项目给插件学习者提供参考，学习后，能轻松进行插件开发。
 
-## 6. 效果截图
+## 6.进阶使用
+>* 插件开发支持模板化开发： PsiClass clazz = JavaDirectoryService.getInstance().createClass(directory, className, templateName)
+
+## 7. 效果截图
 ![效果为:demoshow.gif文件](https://github.com/1004145468/InkeNetPlugin/blob/master/demoshow.gif)
