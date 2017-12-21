@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.ingkee.HttpRequest</id>
+    <name>HttpRequest</name>
+    <version>1.0</version>
+    <vendor email="1004145468@qq.com" url="">Ingkee</vendor>
+
+    <description><![CDATA[
+      通过ServiceInfo的Key生成网络请求代码块
+    ]]></description>
+
+    <change-notes><![CDATA[
+      version 1.0: 支持基本数据类型生成<br>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="107.105"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="com.ingkee.mainaction" class="com.ingkee.plugin.actions.MainAction" text="_HttpRequest"
+                description="通过配置Http请求信息，生成模板代码">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt 1"/>
+        </action>
+    </actions>
+
+</idea-plugin>

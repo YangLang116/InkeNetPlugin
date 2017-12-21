@@ -3,9 +3,6 @@ package com.ingkee.plugin.utils;
 import com.ingkee.plugin.config.ConfigCenter;
 import com.ingkee.plugin.entitys.ParamEntity;
 import com.intellij.openapi.command.WriteCommandAction;
-import com.intellij.openapi.fileEditor.FileEditorManager;
-import com.intellij.openapi.fileEditor.OpenFileDescriptor;
-import com.intellij.openapi.project.Project;
 import com.intellij.psi.*;
 import com.intellij.psi.search.GlobalSearchScope;
 import org.apache.http.util.TextUtils;
@@ -30,28 +27,10 @@ public class ConvertBridge {
                 PsiElementFactory elementFactory = JavaPsiFacade.getElementFactory(mFile.getProject());
                 String resClassPath = createRespFile(elementFactory); //生成响应文件
                 modifyReqFile(elementFactory, resClassPath); //修改请求文件
-                openJaveEntityFile(resClassPath);
             });
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    private void openJaveEntityFile(String resClassPath) {
-        if (TextUtils.isEmpty(resClassPath)) {
-            return;
-        }
-        String classFile = resClassPath.substring(resClassPath.lastIndexOf(".") + 1) + ".java";
-        Project project = mFile.getProject();
-        PsiDirectory entityDir = mFile.getParent().findSubdirectory("entity");
-        if (entityDir == null) {
-            return;
-        }
-        PsiFile javaBean = entityDir.findFile(classFile);
-        if (javaBean == null) {
-            return;
-        }
-        FileEditorManager.getInstance(project).openTextEditor(new OpenFileDescriptor(project, javaBean.getVirtualFile()), true);
     }
 
     private void modifyReqFile(PsiElementFactory elementFactory, String rspfilePath) {
