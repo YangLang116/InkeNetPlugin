@@ -15,7 +15,6 @@ import org.apache.http.util.TextUtils;
  */
 public class ConvertBridge {
 
-    public static final String HOST = "Host";
     private final PsiFile mFile;
     private final PsiClass mClass;
 
@@ -121,7 +120,7 @@ public class ConvertBridge {
     }
 
     private String createRespFile(PsiElementFactory elementFactory) {
-        String BaseModelStr = "com.meelive.ingkee.common.plugin.model.BaseModel";
+        String BaseModelStr = "com.meelive.ingkee.mechanism.http.BaseModel";
         if (!TextUtils.isEmpty(ConfigCenter.RspBody)) { //如果响应体不为空
             String className = getClassNameByKey() + "Entity";
             PsiDirectory entityDirectory = mFile.getParent().findSubdirectory("entity");
